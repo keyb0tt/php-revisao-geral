@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de PHP - Programação Para Internet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #3498db, #9b59b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .stat-item {
+            background: rgba(255,255,255,0.1);
+            padding: 15px 25px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .exercises-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .exercise-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .exercise-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-color: #3498db;
+        }
+
+        .exercise-card.easy {
+            border-left: 5px solid #2ecc71;
+        }
+
+        .exercise-card.medium {
+            border-left: 5px solid #f39c12;
+        }
+
+        .exercise-card.intermediate {
+            border-left: 5px solid #e74c3c;
+        }
+
+        .exercise-number {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #34495e;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        .exercise-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .exercise-desc {
+            color: #7f8c8d;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        .exercise-difficulty {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .difficulty-easy {
+            background: #d5f4e6;
+            color: #27ae60;
+        }
+
+        .difficulty-medium {
+            background: #fdebd0;
+            color: #e67e22;
+        }
+
+        .difficulty-intermediate {
+            background: #fadbd8;
+            color: #e74c3c;
+        }
+
+        .concepts {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .concept-tag {
+            background: #ecf0f1;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            color: #34495e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #ecf0f1;
+            color: #7f8c8d;
+            border-top: 1px solid #bdc3c7;
+        }
+
+        @media (max-width: 768px) {
+            .exercises-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Exercícios de PHP</h1>
+            <p class="subtitle">Programação Para Internet - 2º Semestre Engenharia de Software</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <strong>30</strong> Exercícios
+                </div>
+                <div class="stat-item">
+                    <strong>6</strong> Tópicos
+                </div>
+                <div class="stat-item">
+                    <strong>3</strong> Níveis
+                </div>
+            </div>
+        </header>
+
+        <div class="exercises-grid">
+            <!-- Exercício 1 -->
+            <div class="exercise-card easy" onclick="window.location.href='exercicio1/index.html'">
+                <div class="exercise-number">1</div>
+                <h3 class="exercise-title">Formulário Básico de Cadastro</h3>
+                <p class="exercise-desc">Crie um formulário para cadastrar dados pessoais com validação básica.</p>
+                <span class="exercise-difficulty difficulty-easy">Fácil</span>
+                <div class="concepts">
+                    <span class="concept-tag">HTML Forms</span>
+                    <span class="concept-tag">POST</span>
+                    <span class="concept-tag">Validação</span>
+                </div>
+            </div>
+
+            <!-- Exercício 2 -->
+            <div class="exercise-card easy" onclick="window.location.href='exercicio2/index.html'">
+                <div class="exercise-number">2</div>
+                <h3 class="exercise-title">Calculadora Simples</h3>
+                <p class="exercise-desc">Implemente uma calculadora com as quatro operações básicas.</p>
+                <span class="exercise-difficulty difficulty-easy">Fácil</span>
+                <div class="concepts">
+                    <span class="concept-tag">Operadores</span>
+                    <span class="concept-tag">Form Validation</span>
+                    <span class="concept-tag">Switch Case</span>
+                </div>
+            </div>
+
+            <!-- Adicione os outros 28 exercícios seguindo o mesmo padrão -->
+            <!-- Para economizar espaço, vou mostrar apenas os primeiros 2 como exemplo -->
+
+            <!-- Exercício 3 -->
+            <div class="exercise-card easy" onclick="window.location.href='exercicio3/index.html'">
+                <div class="exercise-number">3</div>
+                <h3 class="exercise-title">Verificador de Idade</h3>
+                <p class="exercise-desc">Classifique a idade em categorias: menor, adulto ou idoso.</p>
+                <span class="exercise-difficulty difficulty-easy">Fácil</span>
+                <div class="concepts">
+                    <span class="concept-tag">Condicionais</span>
+                    <span class="concept-tag">Comparação</span>
+                </div>
+            </div>
+
+            <!-- Continue até o exercício 30... -->
+        </div>
+
+        <footer>
+            <p>🎓 Engenharia de Software - Programação Para Internet</p>
+            <p>💡 Dica: Comece pelos exercícios mais fáceis e avance gradualmente!</p>
+        </footer>
+    </div>
+
+    <script>
+        // Adicione interatividade se desejar
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.exercise-card');
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Navegação já está no onclick do HTML
+                });
+            });
+        });
+    </script>
+</body>
+</html>
