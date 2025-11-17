@@ -1,0 +1,90 @@
+📋 EXERCÍCIOS
+Exercício 1: Formulário Básico de Cadastro
+Crie um formulário HTML para cadastrar nome, email e idade. No PHP, valide se todos os campos foram preenchidos e exiba os dados.
+
+Exercício 2: Calculadora Simples
+Formulário com dois números e operações (+, -, *, /). Processe e mostre o resultado.
+
+Exercício 3: Verificador de Idade
+Formulário para idade. Verifique se é menor (≤17), adulto (18-65) ou idoso (≥66).
+
+Exercício 4: Tabuada
+Receba um número e mostre sua tabuada de 1 a 10 usando loop.
+
+Exercício 5: Lista de Números Pares
+Receba um número N e liste todos os números pares de 0 até N.
+
+Exercício 6: Sistema de Notas
+Formulário com 4 notas. Calcule média e mostre situação (Aprovado ≥7, Recuperação ≥5, Reprovado <5).
+
+Exercício 7: Manipulação de Array - Lista de Compras
+Formulário para adicionar itens à lista de compras. Mostre a lista ordenada.
+
+Exercício 8: Contador de Vogais
+Receba um texto e conte quantas vogais ele possui.
+
+Exercício 9: Gerador de Tabela HTML
+Receba número de linhas e colunas, gere uma tabela HTML com números sequenciais.
+
+Exercício 10: Validador de Senha
+Valide senha: mínimo 8 caracteres, pelo menos 1 número e 1 letra maiúscula.
+
+Exercício 11: Jogo de Adivinhação
+Sorteie número de 1-100. Usuário tenta adivinhar, dica se é maior ou menor.
+
+Exercício 12: Manipulação de Matriz - Grade 3x3
+Crie matriz 3x3, preencha com números sequenciais e exiba em tabela HTML.
+
+Exercício 13: Função - Calculadora de Fatorial
+Função que calcula fatorial de um número.
+
+Exercício 14: Ordenação de Array
+Receba lista de números, ordene crescente e decrescente.
+
+Exercício 15: Sistema de Login Simples
+Valide usuário e senha fixos. Mostre mensagem de sucesso/erro.
+
+Exercício 16: Contador de Palavras
+Receba texto e conte quantas palavras possui.
+
+Exercício 17: Matriz - Soma de Linhas e Colunas
+Matriz 4x4, calcule soma de cada linha e coluna.
+
+Exercício 18: Função - Verificador de Primo
+Função que verifica se número é primo.
+
+Exercício 19: Sistema de Cadastro de Produtos
+Formulário para nome, preço e categoria. Valide preço positivo.
+
+Exercício 20: Gerador de Sequência Fibonacci
+Gere sequência Fibonacci até N termos.
+
+Exercício 21: Manipulação de String - Inversor
+Função que inverte uma string.
+
+Exercício 22: Matriz - Busca de Elemento
+Matriz 5x5, busque se número existe e mostre posição.
+
+Exercício 23: Calculadora de IMC
+Calcule IMC e classifique (Abaixo, Normal, Sobrepeso, Obeso).
+
+Exercício 24: Função - MDC
+Função que calcula MDC entre dois números.
+
+Exercício 25: Sistema de Pesquisa em Array
+Array com nomes, pesquise se nome existe (case insensitive).
+
+Exercício 26: Gerador de Cartela de Bingo
+Gere cartela 5x5 com números únicos de 1-75.
+
+Exercício 27: Função - Contador de Caracteres
+Função que conta ocorrências de cada caractere em string.
+
+Exercício 28: Matriz - Transposição
+Função que transpoe matriz NxM.
+
+Exercício 29: Validador de Email
+Função que valida formato de email.
+
+Exercício 30: Sistema Completo - Agenda de Contatos
+Sistema para adicionar, listar e buscar contatos (nome, telefone, email).
