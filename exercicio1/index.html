@@ -1,0 +1,21 @@
+<!-- Exercício 1: Formulário Básico de Cadastro
+Crie um formulário HTML para cadastrar nome, email e idade. No PHP,
+valide se todos os campos foram preenchidos e exiba os dados. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Cadastro</h1>
+  <form action="processa.php" method="post">
+    Nome: <input type="text" name="nome" id="nome"><br>
+    Email: <input type="email" name="email" id="email"><br>
+    Idade: <input type="number" name="idade" id="idade" class="campo-idade"><br>
+    <br><input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
